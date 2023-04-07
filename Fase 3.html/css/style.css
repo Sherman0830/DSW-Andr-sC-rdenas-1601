@@ -37,10 +37,12 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    list-style: none;
 }
 
 .menuaside{
     list-style: none;
+    padding: 4px;
     
 }
 
@@ -51,6 +53,7 @@ footer {
     background-color: #DFFFD8 ;
     display: block;
     text-align: center;
+
 }
 
 .Imagenes{
@@ -59,4 +62,21 @@ footer {
 
 .Audio{
     text-align: center;
+}
+
+@media (max-width: 500px) {
+    .Contenedor {
+        display: grid;
+        grid-template-areas:
+            'A A A A'
+            'B B B B'
+            'D D D D'
+            '. C C .'
+            'E E E E'
+        ;
+    }
+    footer{
+        background-color: red;
+    }
+
 }
